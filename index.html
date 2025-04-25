@@ -1,83 +1,129 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hotel 3 Marías - Ilo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hotel 3 Marías - Ilo, Perú</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+    * {
+      box-sizing: border-box;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
     }
-    header {
-      background-color: #005f73;
-      color: white;
-      padding: 1.5rem;
-      text-align: center;
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: url('photo_2025-04-25_08-27-14') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
     }
-    section {
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      min-height: 100vh;
       padding: 2rem;
-      max-width: 900px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+    }
+
+    .intro {
+      text-align: center;
+      max-width: 800px;
       margin: auto;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+      animation: fadeIn 2s ease-in 0.5s forwards;
     }
-    h1, h2 {
-      color: #0a9396;
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem auto;
+      max-width: 1200px;
+      animation: fadeIn 2s ease-in 1s forwards;
     }
-    .highlight {
-      background-color: #e9d8a6;
-      padding: 0.5rem;
-      border-left: 5px solid #ca6702;
-      margin: 1rem 0;
+
+    .galeria img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
     }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #005f73;
-      color: white;
+      margin-top: 3rem;
+      font-size: 0.95rem;
+      color: #ccc;
+      animation: fadeIn 2s ease-in 1.5s forwards;
+    }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      .intro { font-size: 1rem; padding: 0 1rem; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Hotel 3 Marías</h1>
-    <p>Ilo, Perú | Turismo sostenible, accesible y tecnológico</p>
-  </header>
+  <div class="overlay">
+    <header>
+      <h1>Hotel 3 Marías</h1>
+      <p>Ilo, Perú</p>
+    </header>
 
-  <section>
-    <h2>Sobre Nosotros</h2>
-    <p>El <strong>Hotel 3 Marías</strong>, ubicado en Ilo, se dedica a brindar servicios de alojamiento con una <strong>atención personalizada</strong> y un enfoque en la <strong>promoción del turismo local</strong>. Nos enorgullece contar con un <strong>equipo 100% femenino</strong>, promoviendo el <strong>empoderamiento de la mujer</strong> en el sector turístico.</p>
+    <section class="intro">
+      <p>Descubre Ilo con una estadía inolvidable. En Hotel 3 Marías te esperamos con atención cálida, servicios SMART, accesibilidad para todos y un fuerte compromiso con la sostenibilidad y la cultura local.</p>
+    </section>
 
-    <div class="highlight">
-      <p>Ofrecemos folletería con información sobre restaurantes, actividades deportivas y sitios turísticos, fomentando la <strong>colaboración comunitaria</strong>.</p>
-    </div>
+    <section class="galeria">
+      <img src="photo_2025-04-25_08-25-59" alt="Hotel 1" />
+      <img src="photo_2025-04-25_08-26-00" alt="Hotel 2" />
+      <img src="photo_2025-04-25_08-26-01" alt="Hotel 3" />
+      <img src="photo_2025-04-25_08-26-03" alt="Hotel 4" />
+      <img src="photo_2025-04-25_08-26-05" alt="Hotel 5" />
+      <img src="photo_2025-04-25_08-26-06" alt="Hotel 6" />
+      <img src="photo_2025-04-25_08-26-09" alt="Hotel 7" />
+      <img src="photo_2025-04-25_08-26-12" alt="Hotel 8" />
+      <img src="photo_2025-04-25_08-26-17" alt="Hotel 9" />
+      <img src="photo_2025-04-25_08-26-22" alt="Hotel 10" />
+      <img src="photo_2025-04-25_08-26-34" alt="Hotel 11" />
+      <img src="photo_2025-04-25_08-27-18" alt="Hotel 12" />
+    </section>
 
-    <h2>Innovaciones en marcha</h2>
-    <ul>
-      <li>Instalación de <strong>paneles solares</strong></li>
-      <li><strong>Puertas automáticas</strong> con sensor</li>
-      <li>Apoyos de <strong>INOX en baños</strong> para adultos mayores</li>
-      <li><strong>Cortinas automáticas</strong> en habitaciones</li>
-      <li>Decoración temática cultural: <em>Cultura Chiribaya, Ruta del Olivo, tema pesquero</em></li>
-      <li><strong>Sistema de gestión</strong> para reportes financieros e inventarios</li>
-    </ul>
-
-    <h2>Promoción y presencia digital</h2>
-    <p>Estamos desarrollando una estrategia de promoción que combina lo <strong>físico</strong> y lo <strong>digital</strong>:</p>
-    <ul>
-      <li>Distribución de folletería impresa</li>
-      <li>Exploración de redes sociales y plataformas de turismo</li>
-      <li>Creación de contenido visual atractivo y descripciones detalladas</li>
-      <li>Enfoque en <strong>sostenibilidad, accesibilidad</strong> y <strong>tecnología SMART</strong></li>
-      <li>Integración de <strong>elementos culturales locales</strong></li>
-      <li>Atención especializada al <strong>adulto mayor</strong></li>
-    </ul>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Hotel 3 Marías | Ilo, Perú</p>
-  </footer>
+    <footer>
+      <p>Jr. Moquegua N° 423, Ilo, Perú</p>
+      <p>Cel. 941 773 427 | hotel_3marias@hotmail.com</p>
+    </footer>
+  </div>
 </body>
 </html>
